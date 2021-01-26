@@ -14,4 +14,4 @@
 ?>
 
 <!-- This file should primarily consist of HTML with a little bit of PHP. -->
-This is the submenu page
+Submissions page works!

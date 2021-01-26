@@ -22,12 +22,12 @@
     do_settings_sections( 'cr_settings' );
     ?>
     <div class="mb-3">
-        <label for="theAgencyName" class="form-label">Agency Name</label>
-        <input type="text" name="theAgencyName" value="<?php echo get_option( 'theAgencyName' ) ?>" class="form-control" id="theAgencyName" aria-describedby="theAgencyName">
+        <label for="AgencyName" class="form-label">Agency Name</label>
+        <input type="text" name="cr_agency_name" value="<?php echo get_option( 'cr_agency_name' ) ?>" class="form-control" id="AgencyName" aria-describedby="theAgencyName">
     </div>
     <div class="mb-3">
-        <label for="theApiKey" class="form-label">API Key</label>
-        <input type="text" name="theApiKey" value="<?php echo get_option( 'theApiKey' ) ?>" class="form-control" id="theApiKey">
+        <label for="ApiKey" class="form-label">API Key</label>
+        <input type="text" name="cr_api_key" value="<?php echo get_option( 'cr_api_key' ) ?>" class="form-control" id="ApiKey">
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
     </form>

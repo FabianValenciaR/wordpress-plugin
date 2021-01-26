@@ -108,8 +108,8 @@ class Plugin_Name_Admin {
 	 * @since    1.0.0
 	 */
 	public function my_admin_menu(){
-		add_menu_page( 'New Plugin Settings', 'Content Refinery', 'manage_options', 'plugin-name/mainsettings.php', array( $this, 'myplugin_admin_page'), 'dashicons-tickets', 250);
-		add_submenu_page( 'plugin-name/mainsettings.php', 'My Sub Level Menu Example', 'Sub Level Menu', 'manage_options', 'plugin-name/importer.php', array( $this,'myplugin_admin_sub_page'), 1);
+		add_menu_page( 'Content Refinery - Start engaging your users now!', 'Content Refinery', 'manage_options', 'plugin-name/mainsettings.php', array( $this, 'myplugin_admin_page'), 'dashicons-chart-pie', 100);
+		add_submenu_page( 'plugin-name/mainsettings.php', 'Content Refinery - Submissions', 'Submissions', 'manage_options', 'plugin-name/importer.php', array( $this,'myplugin_admin_sub_page'), 1);
 	}
 
 	public function myplugin_admin_page(){
