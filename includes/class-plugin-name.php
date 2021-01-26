@@ -159,6 +159,11 @@ class Plugin_Name {
 
 		//add admin menu items
 		$this->loader->add_action( 'admin_menu', $plugin_admin, 'my_admin_menu' );
+		
+		//register cr settings
+		$this->loader->add_action( 'admin_menu', $plugin_admin, 'my_admin_menu' );
+
+		$this->loader->add_action( 'admin_init', $plugin_admin,  'register_cr_settings');
 	}
 
 	/**

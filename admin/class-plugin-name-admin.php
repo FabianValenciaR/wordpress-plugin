@@ -74,6 +74,7 @@ class Plugin_Name_Admin {
 		 */
 
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/plugin-name-admin.css', array(), $this->version, 'all' );
+		wp_enqueue_style( 'bootstrap-css', plugin_dir_url( __FILE__ ) . 'css/bootstrap.min.css', array(), $this->version, 'all' );
 
 	}
 
@@ -97,6 +98,7 @@ class Plugin_Name_Admin {
 		 */
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/plugin-name-admin.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( 'bootstrap.js', plugin_dir_url( __FILE__ ) . 'js/bootstrap.min.js', array( 'jquery' ), $this->version, false );
 
 	}
 
@@ -118,6 +120,17 @@ class Plugin_Name_Admin {
 	public function myplugin_admin_sub_page(){
 		// return subpage view
 		require_once 'partials/submenu_page.php';
+	}
+
+	/**
+	 * Register content refinery settings
+	 *
+	 * @since    1.0.0
+	 */
+	public function register_cr_settings(){
+		//register all settings from main page
+		register_setting( 'cr_settings', 'theAgencyName' );
+		register_setting( 'cr_settings', 'theApiKey' );
 	}
 
 }
