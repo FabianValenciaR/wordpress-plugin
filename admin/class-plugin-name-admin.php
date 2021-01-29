@@ -129,8 +129,8 @@ class Plugin_Name_Admin {
 	 */
 	public function register_cr_settings(){
 		//register all settings from main page
-		register_setting( 'cr_settings', 'theAgencyName' );
-		register_setting( 'cr_settings', 'theApiKey' );
+		register_setting( 'cr_settings', 'cr_agency_name' );
+		register_setting( 'cr_settings', 'cr_api_key' );
 	}
 
 }

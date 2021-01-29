@@ -100,4 +100,12 @@ class Plugin_Name_Public {
 
 	}
 
+
+	// our first hello world shortcod
+	public function public_hello_world(){
+		// just say hello
+		
+		echo('Hello from Content Refinery!');
+	}
+
 }
